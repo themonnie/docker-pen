@@ -7,7 +7,7 @@ Howto: http://siag.nu/pen/
 
 ## Docker use
 ```bash
-docker run -d -p 443:443 pen 0.0.0.0:443 web0:443 web1:443
+docker run -d -p 443:443 themonnie/pen 0.0.0.0:443 web0:443 web1:443
 ```
 
 ## Docker-compose use
