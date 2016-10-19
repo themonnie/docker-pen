@@ -15,16 +15,20 @@ docker run -d -p 443:443 themonnie/pen 0.0.0.0:443 web0:443 web1:443
 ```docker-compose
 ...
 pen-amqp:
-  image: galexrt/pen:latest
+  image: themonnie/pen
   hostname: pen
   ports: 
     - 5672:5672
   links:
     - rabbitmq0
     - rabbitmq1
-  command: "-d pen:5672 rabbitmq0:5672 rabbitmq1:5672"
+  command: "pen:5672 rabbitmq0:5672 rabbitmq1:5672"
 ...
 ```
+
+[![](https://images.microbadger.com/badges/image/themonnie/pen.svg)](https://microbadger.com/images/themonnie/pen "Get your own image badge on microbadger.com")
+
+
 ## pen usage
 ```
 usage:
